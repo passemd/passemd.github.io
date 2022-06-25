@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+pre {
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -28,8 +33,8 @@ button {
 
 .container {
   margin: 40px 0;
-  width: 400px;
-  height: 600px;
+  max-width: 500px;
+    width: 80%;
   padding: 10px 25px;
   background: #0a0e31;
   border-radius: 10px;
@@ -48,7 +53,6 @@ button {
 .result {
   position: relative;
   width: 100%;
-  height: 65px;
   overflow: hidden;
 }
 
@@ -78,10 +82,15 @@ button {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   color: #fff;
+  padding: 1.2rem 1.5rem;
   text-align: center;
-  line-height: 65px;
 }
-
+.result__viewbox > * {
+    white-space: pre-wrap;
+    word-break: break-all;
+    width: 100%;
+    display: block;
+}
 .result #copy-btn {
   position: absolute;
   top: var(--y);
